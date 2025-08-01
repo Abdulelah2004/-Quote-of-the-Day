@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .quote-decoration::before, .quote-decoration::after {
+    content: '"';
+    @apply text-blue-600 text-4xl;
+  }
+  .author-decoration::before {
+    content: '-';
+    @apply absolute -left-4 text-blue-600 text-2xl top-0;
+  }
+}
